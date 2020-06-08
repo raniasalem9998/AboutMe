@@ -1,9 +1,15 @@
 body{
-    background-image: url(img/bad-cat-logo.jpg);
-    background-color: rgb(216, 212, 212);
-color: gold;
+    background: rgb(2,0,36);
+    background: rgb(0,36,4);
+    background: radial-gradient(circle, rgba(0,36,4,1) 0%, rgba(121,9,83,1) 35%, rgba(0,212,255,1) 100%);
+color:black;
 }
 body h1{
 font-family: Georgia, 'Times New Roman', Times, serif;
-color: rgb(4, 73, 38);
+font-size: large;
+color:whitesmoke;
+}
+body p{
+    background-color: rgba(128, 0, 128, 0.192);
+    width:50%;
 }
