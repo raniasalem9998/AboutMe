@@ -1,15 +1,18 @@
 body{
-    background: rgb(2,0,36);
-    background: rgb(0,36,4);
-    background: radial-gradient(circle, rgba(0,36,4,1) 0%, rgba(121,9,83,1) 35%, rgba(0,212,255,1) 100%);
-color:black;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+
 }
-body h1{
+h1{
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: large;
-color:whitesmoke;
+font-style:italicS ;
+color:rgb(57, 59, 19);
 }
 body p{
-    background-color: rgba(128, 0, 128, 0.192);
+    background-color: rgba(19, 194, 194, 0.205);
     width:50%;
+    color: rgb(7, 2, 2); 
+    font-family: serif;
+    
 }
