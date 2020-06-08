@@ -2,11 +2,11 @@
 
 var name = prompt("WHAT IS YOUR NAME?",'visitor');
 alert ("hello"+ name);
-var cat.toLowerCase() = prompt("Do I like cats?");
-var tall.toLowerCase()  = prompt("Am I not 150cm tall?");
-var sleep.toLowerCase()  = prompt("Do I have control on my sleep scedule?");
-var plants.toLowerCase()  = prompt("Do I like plants?");
-var physics.toLowerCase()  = prompt("Am I good at physics?");
+var cat = prompt("Do I like cats?");
+var tall = prompt("Am I not 150cm tall?");
+var sleep  = prompt("Do I have control on my sleep scedule?");
+var plants  = prompt("Do I like plants?");
+var physics  = prompt("Am I good at physics?");
 
 if (cat.toLowerCase() == "yes") {
     alert("sure I do!");
