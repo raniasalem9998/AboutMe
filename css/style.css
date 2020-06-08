@@ -1,16 +1,17 @@
 body{
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background-color: rgba(19, 194, 194, 0.205);
 
 }
 h1{
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: large;
-font-style:italicS ;
+font-style:italic ;
 color:rgb(57, 59, 19);
 }
 body p{
-    background-color: rgba(19, 194, 194, 0.205);
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    
     width:50%;
     color: rgb(7, 2, 2); 
     font-family: serif;
