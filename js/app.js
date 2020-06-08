@@ -1,5 +1,6 @@
-"use strict"
-var name = prompt("WHAT IS YOUR NAME?");
+ 'use strict'
+
+var name = prompt("WHAT IS YOUR NAME?",'visitor');
 alert ("hello"+ name);
 var cat = prompt("Do I like cats?");
 var tall = prompt("Am I not 150cm tall?");
@@ -42,3 +43,4 @@ else {
     alert ("wrong");
 }
 alert ("Bye"+ name);
+console.log(name);
