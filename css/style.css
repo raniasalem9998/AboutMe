@@ -1,0 +1,9 @@
+body{
+    background-image: url(img/bad-cat-logo.jpg);
+    background-color: grey;
+color: gold;
+}
+body h1{
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: rgb(4, 73, 38);
+}
