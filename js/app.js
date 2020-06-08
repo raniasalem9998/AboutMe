@@ -2,13 +2,13 @@
 
 var name = prompt("WHAT IS YOUR NAME?",'visitor');
 alert ("hello"+ name);
-var cat = prompt("Do I like cats?");
+var cat.toLowerCase() = prompt("Do I like cats?");
 var tall = prompt("Am I not 150cm tall?");
 var sleep = prompt("Do I have control on my sleep scedule?");
 var plants = prompt("Do I like plants?");
 var physics = prompt("Am I good at physics?");
 
-if (cat.toLowerCase() == "yes") {
+if (cat == "yes") {
     alert("sure I do!");
 }
  else {
@@ -42,5 +42,6 @@ if (physics.toLowerCase()=="yes"){
 else {
     alert ("wrong");
 }
+
 alert ("Bye"+ name);
 
