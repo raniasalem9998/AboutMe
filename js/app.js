@@ -10,7 +10,7 @@ if (cat.toLowerCase() == "yes") {
 }
 else {
     alert("1- wrong");
-    
+
 }
 
 var tall = prompt("Am I not 150cm tall?");
@@ -54,20 +54,21 @@ else {
 
 var numGuess = prompt("Guess the number I have in mind. 4 atp");
 
+var randumN = Math.round(Math.random() * 10)
 
-if (numGuess == 7) {
+if (numGuess == randumN) {
     alert("correct!");
     var correct = correct + 1;
 }
 else {
     for (var i = 1; i <= 3; i++) {
 
-        if (numGuess < 7) {
+        if (numGuess < randumN ) {
             alert("too low");
             prompt("Guess the number I have in mind. 4 atp");
-            
+
         }
-        else if (numGuess > 7) {
+        else if (numGuess >randumN) {
             alert("too high");
             prompt("Guess the number I have in mind. 4 atp");
         }
@@ -76,7 +77,7 @@ else {
 
 }
 
-document.write('<h3>' + "for Q6 you tried " + i + "times " + "the correct answer is 7" + '</h3>')
+document.write('<h3>' + "for Q6 you tried " + i + "times " + "the correct answer is " + randumN + '</h3>')
 
 
 //Q7
@@ -84,28 +85,25 @@ document.write('<h3>' + "for Q6 you tried " + i + "times " + "the correct answer
 var qBrotherName = prompt("what are my brother's names? 6 atp");
 var aBrotherName = ["ahmed", "khaled", "anas"];
 
-    for (var a = 1; a < 6; a++) {
-        if (qBrotherName == aBrotherName) {
-            alert("correct!");
-            var correct = correct + 1;
+for (var a = 1; a < 6; a++) {
+    if (qBrotherName == aBrotherName) {
+        alert("correct!");
+        var correct = correct + 1;
 
-        }
-        else{
-            prompt("what are my brother's names? 6 atp");
-        }
-       
     }
-    // if (confirm("Press a button!")) {
-    //     txt = "You pressed OK!";
-    //   } else {
-    //     txt = "You pressed Cancel!";
+    else {
+        prompt("what are my brother's names? 6 atp");
+    }
 
-    
-    document.write('<h3>' + "for Q7 you tried " + a + "times " + "the answers are " + aBrotherName + '</h3>');
-    document.write('<h4>'+"your total is " + correct +'</h4>')
-    if (correct == 0) {
-        if (confirm("non is correct, you want to try again?")){
-         alert ("reload");
-        }
+}
+
+
+
+document.write('<h3>' + "for Q7 you tried " + a + "times " + "the answers are " + aBrotherName + '</h3>');
+document.write('<h4>' + "your total is " + correct + '</h4>')
+if (correct == 0) {
+    if (confirm("non is correct, you want to try again?")) {
+        alert("reload");
     }
-    alert("Bye" + name);
+}
+alert("Bye" + name);
