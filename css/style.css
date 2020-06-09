@@ -10,10 +10,14 @@ color:rgb(57, 59, 19);
 }
 body p{
     background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: linear-gradient(0deg,rgb(34, 192, 195) 0%, rgb(253, 187, 45) 100%);
     
     width:50%;
     color: rgb(7, 2, 2); 
     font-family: serif;
     
+}
+h4 {
+    font-style: italic;
+    color: rgb(26, 73, 49);
 }
