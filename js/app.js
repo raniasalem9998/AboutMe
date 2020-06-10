@@ -99,6 +99,10 @@ for (var a = 0; a < 6; a++) {
     var qBrotherName = prompt("what are my brother's names? 6 atp");
     var aBrotherName = ["ahmed", "khaled", "anas"];
 
+    if (!(qBrotherName === aBrotherName[y])) {
+        alert("wrong");
+        qBrotherName = prompt("what are my brother's names? 6 atp");
+    }
     for (var y = 0; y < qBrotherName.length; y++) {
         if (qBrotherName === aBrotherName[y]) {
             alert("correct!");
@@ -110,8 +114,7 @@ for (var a = 0; a < 6; a++) {
     if (answer === true) {
         break;
     }
-
-    alert("wrong");
+    
 }
 
 document.write('<h3>' + "for Q7 you tried " + y + "times " + "the answers are " + aBrotherName + '</h3>');
