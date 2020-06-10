@@ -61,7 +61,7 @@ if (numGuess == randumN) {
     var correct = correct + 1;
 }
 else {
-    for (var i = 1; i <= 3; i++) {
+    for (var i = 1; i <= 4; i++) {
 
         if (numGuess < randumN ) {
             alert("too low");
@@ -85,7 +85,7 @@ document.write('<h3>' + "for Q6 you tried " + i + "times " + "the correct answer
 var qBrotherName = prompt("what are my brother's names? 6 atp");
 var aBrotherName = ["ahmed", "khaled", "anas"];
 
-for (var a = 1; a < 6; a++) {
+for (var a = 1; a <= 6; a++) {
     if (qBrotherName == aBrotherName) {
         alert("correct!");
         var correct = correct + 1;
