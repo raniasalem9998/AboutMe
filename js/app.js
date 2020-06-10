@@ -1,53 +1,53 @@
 'use strict'
 var correct = 0;
-// var name = prompt("WHAT IS YOUR NAME?", 'visitor');
-// alert("hello" + name);
+var name = prompt("WHAT IS YOUR NAME?", 'visitor');
+alert("hello" + name);
 
-// var cat = prompt("Do I like cats?");
-// if (cat.toLowerCase() == "yes" || cat.toLowerCase() == "y") {
-//     alert("sure I do!");
-//     var correct = correct + 1;
-// }
-// else {
-//     alert("wrong");
+var cat = prompt("Do I like cats?");
+if (cat.toLowerCase() == "yes" || cat.toLowerCase() == "y") {
+    alert("sure I do!");
+    var correct = correct + 1;
+}
+else {
+    alert("wrong");
 
-// }
+}
 
-// var tall = prompt("Am I not 150cm tall?");
-// if (tall.toLowerCase() == "yes" || tall.toLowerCase() == "y") {
-//     alert("proudely yes!");
-//     var correct = correct + 1;
-// }
-// else {
-//     alert("wrong");
-// }
+var tall = prompt("Am I not 150cm tall?");
+if (tall.toLowerCase() == "yes" || tall.toLowerCase() == "y") {
+    alert("proudely yes!");
+    var correct = correct + 1;
+}
+else {
+    alert("wrong");
+}
 
-// var sleep = prompt("Do I have control on my sleep scedule?");
-// if (sleep.toLowerCase() == "no" || sleep.toLowerCase() == "n") {
-//     alert("sadely");
-//     var correct = correct + 1;
-// }
-// else {
-//     alert("wrong");
-// }
+var sleep = prompt("Do I have control on my sleep scedule?");
+if (sleep.toLowerCase() == "no" || sleep.toLowerCase() == "n") {
+    alert("sadely");
+    var correct = correct + 1;
+}
+else {
+    alert("wrong");
+}
 
-// var plants = prompt("Do I like plants?");
-// if (plants.toLowerCase() == "no" || plants.toLowerCase() == "n") {
-//     alert("correct");
-//     var correct = correct + 1;
-// }
-// else {
-//     alert("wrong");
-// }
+var plants = prompt("Do I like plants?");
+if (plants.toLowerCase() == "no" || plants.toLowerCase() == "n") {
+    alert("correct");
+    var correct = correct + 1;
+}
+else {
+    alert("wrong");
+}
 
-// var physics = prompt("Am I good at physics?");
-// if (physics.toLowerCase() == "yes" || physics.toLowerCase() == "y") {
-//     alert("correct");
-//     var correct = correct + 1;
-// }
-// else {
-//     alert("wrong");
-// }
+var physics = prompt("Am I good at physics?");
+if (physics.toLowerCase() == "yes" || physics.toLowerCase() == "y") {
+    alert("correct");
+    var correct = correct + 1;
+}
+else {
+    alert("wrong");
+}
 
 //lab03
 //Q8
