@@ -1,9 +1,10 @@
 'use strict'
-var correct = 0;
+
 var name = prompt("WHAT IS YOUR NAME?", 'visitor');
 alert("hello " + name);
 
-function question(userInput) {
+function question(userInput,correct) {
+    var correct = 0;
     var myQutions = ["Do I like cats?", "Am I 150cm tall?"
         , "Do I have control on my sleep scedule?", "Do I like plants?"
         , "Am I good at physics?"];
@@ -79,12 +80,12 @@ function question(userInput) {
             }
         }
     }
-    return userInput;
-
+    return myQutions;
 
 }
 
 question();
+console.log(correct)
 
 
 
@@ -128,7 +129,7 @@ document.write('<h3>' + "for Q6 you tried " + i + "times " + "the correct answer
 //Q7
 
 for (var a = 0; a < 6; a++) {
-    var qBrotherName = prompt("what are my brother's names? 6 atp");
+    var qBrotherName = prompt("what are my brother's names? 6 atp").toLowerCase();
     var aBrotherName = ["ahmed", "khaled", "anas"];
 
     for (var y = 0; y < qBrotherName.length; y++) {
@@ -147,10 +148,6 @@ for (var a = 0; a < 6; a++) {
     if (answer === true) {
         break;
     }
-
-
-
-
 }
 
 document.write('<h3>' + "for Q7 you tried " + y + "times " + "the answers are " + aBrotherName + '</h3>');
@@ -158,10 +155,10 @@ document.write('<h4>' + "your total is " + correct + '</h4>')
 
 
 
-alert("Bye" + name);
+alert("Bye " + name);
 
 function enterNameHere(userInput) {
-    alert('your have entered : ' + userInput);
+    alert('you have entered : ' + userInput);
 }
 
 enterNameHere('waleed A. afifi');
