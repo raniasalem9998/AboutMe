@@ -114,3 +114,10 @@ if (correct == 0) {
 }
 
 alert("Bye" + name);
+
+
+function enterYourNameHere( userInput ) {
+    alert('You have enter :' + userInput);
+}
+
+enterYourNameHere('Waleed A. Afifi');
