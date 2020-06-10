@@ -3,36 +3,55 @@ var correct = 0;
 var name = prompt("WHAT IS YOUR NAME?", 'visitor');
 alert("hello" + name);
 
-var cat = prompt("Do I like cats?");
-if (cat.toLowerCase() == "yes" || cat.toLowerCase() == "y") {
+
+
+var myQutions =["Do I like cats?", "Am I not 150cm tall?"
+    ,"Do I have control on my sleep scedule?", "Do I like plants?"
+    , "Am I good at physics?"];
+
+var myAnswer = ['yes', 'y', 'no', 'n'];
+
+var cat = prompt(myQutions[0]).toLowerCase()
+if ( myQutions[1] == myAnswer[0] ||  myQutions[1] == myAnswer[1]) {
     alert("sure I do!");
     var correct = correct + 1;
 }
-else {
+else{
     alert("wrong");
 
 }
 
-var tall = prompt("Am I not 150cm tall?");
-if (tall.toLowerCase() == "yes" || tall.toLowerCase() == "y") {
+var tall = prompt(myQutions[1]).toLowerCase();
+
+if (myQutions[1] == myAnswer[0] || myQutions[1] == myAnswer[1]) {
     alert("proudely yes!");
     var correct = correct + 1;
 }
-else {
+else{
     alert("wrong");
 }
 
-var sleep = prompt("Do I have control on my sleep scedule?");
-if (sleep.toLowerCase() == "no" || sleep.toLowerCase() == "n") {
+var sleep = prompt(myQutions[2]).toLowerCase();
+
+if (myQutions[2] == myAnswer[2] || myQutions[2] == myAnswer[3]) {
     alert("sadely");
     var correct = correct + 1;
 }
-else {
+else{
     alert("wrong");
 }
 
-var plants = prompt("Do I like plants?");
-if (plants.toLowerCase() == "no" || plants.toLowerCase() == "n") {
+var plants =prompt(myQutions[3]).toLowerCase();
+if (plants == myAnswer[2] || plants == myAnswer[3]) {
+    alert("correct");
+    var correct = correct + 1;
+}
+else{
+    alert("wrong");
+}
+
+var physics = prompt(myQutions[4]).toLowerCase();
+if (physics == myAnswer[1] || physics == myAnswer[0]) {
     alert("correct");
     var correct = correct + 1;
 }
@@ -40,14 +59,6 @@ else {
     alert("wrong");
 }
 
-var physics = prompt("Am I good at physics?");
-if (physics.toLowerCase() == "yes" || physics.toLowerCase() == "y") {
-    alert("correct");
-    var correct = correct + 1;
-}
-else {
-    alert("wrong");
-}
 
 //lab03
 //Q8
@@ -56,7 +67,7 @@ else {
 var randumN = Math.round(Math.random() * 5)
 console.log(randumN)
 for (var i = 0; i <= 3; i++) {
-   
+
     var numGuess = prompt("Guess the number I have in mind (0-5). 4 atp");
 
     if (numGuess == randumN) {
@@ -67,16 +78,15 @@ for (var i = 0; i <= 3; i++) {
 
     else if (randumN > numGuess) {
         alert("too low");
-        prompt("Guess the number I have in mind (0-5). 4 atp");
 
     }
     else if (randumN < numGuess) {
         alert("too high");
-        prompt("Guess the number I have in mind (0-5). 4 atp");
     }
+
     else {
         alert("what?")
-        
+
     }
 }
 
@@ -85,32 +95,27 @@ document.write('<h3>' + "for Q6 you tried " + i + "times " + "the correct answer
 
 //Q7
 
-
+var qBrotherName = prompt("what are my brother's names? 6 atp");
+var aBrotherName = ["ahmed", "khaled", "anas"];
 
 for (var a = 0; a < 6; a++) {
-    var qBrotherName = prompt("what are my brother's names? 6 atp");
-
-    for (var y = 0 ; y < qBrotherName.length ; y++){
-        var aBrotherName = ["ahmed", "khaled", "anas"];
-
-        if (qBrotherName == aBrotherName[y]) {
+    for (var y = 0; y < qBrotherName.length; y++) {
+        if (qBrotherName === aBrotherName[y]) {
             alert("correct!");
             var correct = correct + 1;
+            var answer = true;
         }
-
-    }
-            alert("wrong")
-            
        
+    }
+    if (answer = true) {
+        break;
+    }
+    alert("wrong");
 }
 
-document.write('<h3>' + "for Q7 you tried " + a + "times " + "the answers are " + aBrotherName + '</h3>');
+document.write('<h3>' + "for Q7 you tried " + y + "times " + "the answers are " + aBrotherName + '</h3>');
 document.write('<h4>' + "your total is " + correct + '</h4>')
 
-if (correct == 0) {
-    if (confirm("non is correct, you want to try again?")) {
-        alert("reload");
-    }
-}
+
 
 alert("Bye" + name);

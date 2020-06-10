@@ -1,12 +1,13 @@
 body{
-    background-color: rgba(19, 194, 194, 0.205);
-
+    margin-left: 30%;
 }
 h1{
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: large;
 font-style:italic ;
 color:rgb(57, 59, 19);
+margin-left: 20%;
+
 }
 
 div {
