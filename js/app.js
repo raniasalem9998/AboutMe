@@ -3,7 +3,8 @@
 var name = prompt("WHAT IS YOUR NAME?", 'visitor');
 alert("hello " + name);
 
-function question(userInput,correct) {
+function question(userInput,correct,numGuess,qBrotherName) {
+
     var correct = 0;
     var myQutions = ["Do I like cats?", "Am I 150cm tall?"
         , "Do I have control on my sleep scedule?", "Do I like plants?"
@@ -80,22 +81,11 @@ function question(userInput,correct) {
             }
         }
     }
-    return myQutions;
 
-}
+    var randumN = Math.round(Math.random() * 5)
 
-question();
-console.log(correct)
-
-
-
-
-//lab03
-//Q8
-
-
-var randumN = Math.round(Math.random() * 5)
 console.log(randumN)
+
 for (var i = 0; i <= 3; i++) {
 
     var numGuess = prompt("Guess the number I have in mind (0-5). 4 atp");
@@ -120,16 +110,12 @@ for (var i = 0; i <= 3; i++) {
     }
 }
 
-
-
-
 document.write('<h3>' + "for Q6 you tried " + i + "times " + "the correct answer is " + randumN + '</h3>')
-
 
 //Q7
 
 for (var a = 0; a < 6; a++) {
-    var qBrotherName = prompt("what are my brother's names? 6 atp").toLowerCase();
+    var qBrotherName = prompt("what is one of my brothers name? 6 atp").toLowerCase();
     var aBrotherName = ["ahmed", "khaled", "anas"];
 
     for (var y = 0; y < qBrotherName.length; y++) {
@@ -152,6 +138,17 @@ for (var a = 0; a < 6; a++) {
 
 document.write('<h3>' + "for Q7 you tried " + y + "times " + "the answers are " + aBrotherName + '</h3>');
 document.write('<h4>' + "your total is " + correct + '</h4>')
+
+
+
+    console.log(correct);
+    return [myQutions , correct , numGuess , aBrotherName];
+}
+
+question();
+
+//lab03
+//Q8
 
 
 
