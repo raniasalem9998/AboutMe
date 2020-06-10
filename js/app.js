@@ -54,8 +54,9 @@ else {
 
 
 var randumN = Math.round(Math.random() * 5)
+console.log(randumN)
 for (var i = 0; i <= 3; i++) {
-    console.log(randumN)
+   
     var numGuess = prompt("Guess the number I have in mind (0-5). 4 atp");
 
     if (numGuess == randumN) {
@@ -87,14 +88,16 @@ document.write('<h3>' + "for Q6 you tried " + i + "times " + "the correct answer
 
 
 for (var a = 0; a < 6; a++) {
-    var qBrotherName. = prompt("what are my brother's names? 6 atp");
+    var qBrotherName = prompt("what are my brother's names? 6 atp");
 
     for (var y = 0 ; y < qBrotherName.length ; y++){
         var aBrotherName = ["ahmed", "khaled", "anas"];
-        if (qBrotherName[y] == aBrotherName) {
+
+        if (qBrotherName == aBrotherName[y]) {
             alert("correct!");
             var correct = correct + 1;
         }
+
     }
             alert("wrong")
             
