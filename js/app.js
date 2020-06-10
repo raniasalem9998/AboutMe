@@ -1,7 +1,7 @@
 'use strict'
 var correct = 0;
 var name = prompt("WHAT IS YOUR NAME?", 'visitor');
-alert("hello" + name);
+alert("hello " + name);
 
 function question(userInput) {
     var myQutions = ["Do I like cats?", "Am I 150cm tall?"
@@ -135,7 +135,8 @@ for (var a = 0; a < 6; a++) {
         alert("wrong");
         qBrotherName = prompt("what are my brother's names? 6 atp");
     }
-    for (var y = 0; y < qBrotherName.length; y++) {
+    
+    for (var y = 0; y < qBrotherName.length ; y++) {
         if (qBrotherName === aBrotherName[y]) {
             alert("correct!");
             var correct = correct + 1;
