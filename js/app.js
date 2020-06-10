@@ -3,61 +3,90 @@ var correct = 0;
 var name = prompt("WHAT IS YOUR NAME?", 'visitor');
 alert("hello" + name);
 
+function question(userInput) {
+    var myQutions = ["Do I like cats?", "Am I 150cm tall?"
+        , "Do I have control on my sleep scedule?", "Do I like plants?"
+        , "Am I good at physics?"];
+
+    var myAnswer = ['yes', 'y', 'no', 'n'];
+
+    for (var j = 0; j < myQutions.length; j++) {
+
+        var userInput = myQutions[j];
+
+        if (userInput == myQutions[0]) {
+
+            var cat = prompt(myQutions[0]).toLowerCase()
+
+            if (cat == myAnswer[0] || cat == myAnswer[1]) {
+                alert("sure I do!");
+                var correct = correct + 1;
+            }
+            else {
+                alert("wrong");
+
+            }
+        }
+
+        else if (userInput == myQutions[1]) {
+
+            var tall = prompt(myQutions[1]).toLowerCase();
+
+            if (tall == myAnswer[0] || tall == myAnswer[1]) {
+                alert("proudely yes!");
+                var correct = correct + 1;
+            }
+            else {
+                alert("wrong");
+            }
+
+        }
+
+        else if (userInput == myQutions[2]) {
+
+            var sleep = prompt(myQutions[2]).toLowerCase();
+
+            if (sleep == myAnswer[2] || sleep == myAnswer[3]) {
+                alert("sadely");
+                var correct = correct + 1;
+            }
+            else {
+                alert("wrong");
+            }
+        }
+
+        else if (userInput == myQutions[3]) {
+
+            var plants = prompt(myQutions[3]).toLowerCase();
+            if (plants == myAnswer[2] || plants == myAnswer[3]) {
+                alert("correct");
+                var correct = correct + 1;
+            }
+            else {
+                alert("wrong");
+            }
+        }
+
+        else if (userInput == myQutions[4]) {
+
+            var physics = prompt(myQutions[4]).toLowerCase();
+            if (physics == myAnswer[1] || physics == myAnswer[0]) {
+                alert("correct");
+                var correct = correct + 1;
+            }
+            else {
+                alert("wrong");
+            }
+        }
+    }
+    return userInput;
 
 
-var myQutions = ["Do I like cats?", "Am I not 150cm tall?"
-    , "Do I have control on my sleep scedule?", "Do I like plants?"
-    , "Am I good at physics?"];
-
-var myAnswer = ['yes', 'y', 'no', 'n'];
-
-var cat = prompt(myQutions[0]).toLowerCase()
-if (myQutions[1] == myAnswer[0] || myQutions[1] == myAnswer[1]) {
-    alert("sure I do!");
-    var correct = correct + 1;
 }
-else {
-    alert("wrong");
 
-}
+question();
 
-var tall = prompt(myQutions[1]).toLowerCase();
 
-if (myQutions[1] == myAnswer[0] || myQutions[1] == myAnswer[1]) {
-    alert("proudely yes!");
-    var correct = correct + 1;
-}
-else {
-    alert("wrong");
-}
-
-var sleep = prompt(myQutions[2]).toLowerCase();
-
-if (myQutions[2] == myAnswer[2] || myQutions[2] == myAnswer[3]) {
-    alert("sadely");
-    var correct = correct + 1;
-}
-else {
-    alert("wrong");
-}
-
-var plants = prompt(myQutions[3]).toLowerCase();
-if (plants == myAnswer[2] || plants == myAnswer[3]) {
-    alert("correct");
-    var correct = correct + 1;
-}
-else {
-    alert("wrong");
-}
-
-var physics = prompt(myQutions[4]).toLowerCase();
-if (physics == myAnswer[1] || physics == myAnswer[0]) {
-    alert("correct");
-    var correct = correct + 1;
-}
-else {
-    alert("wrong");
-}
 
 
 //lab03
@@ -90,6 +119,9 @@ for (var i = 0; i <= 3; i++) {
     }
 }
 
+
+
+
 document.write('<h3>' + "for Q6 you tried " + i + "times " + "the correct answer is " + randumN + '</h3>')
 
 
@@ -114,7 +146,7 @@ for (var a = 0; a < 6; a++) {
     if (answer === true) {
         break;
     }
-    
+
 }
 
 document.write('<h3>' + "for Q7 you tried " + y + "times " + "the answers are " + aBrotherName + '</h3>');
@@ -127,4 +159,5 @@ alert("Bye" + name);
 function enterNameHere(userInput) {
     alert('your have entered : ' + userInput);
 }
-enterNameHere('waleed A. afifi')
+
+enterNameHere('waleed A. afifi');
