@@ -119,3 +119,10 @@ document.write('<h4>' + "your total is " + correct + '</h4>')
 
 
 alert("Bye" + name);
+
+
+function enterYourNameHere( userInput ) {
+    alert('You have enter :' + userInput);
+}
+
+enterYourNameHere('Waleed A. Afifi');
