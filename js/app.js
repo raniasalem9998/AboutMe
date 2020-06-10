@@ -5,18 +5,18 @@ alert("hello" + name);
 
 
 
-var myQutions =["Do I like cats?", "Am I not 150cm tall?"
-    ,"Do I have control on my sleep scedule?", "Do I like plants?"
+var myQutions = ["Do I like cats?", "Am I not 150cm tall?"
+    , "Do I have control on my sleep scedule?", "Do I like plants?"
     , "Am I good at physics?"];
 
 var myAnswer = ['yes', 'y', 'no', 'n'];
 
 var cat = prompt(myQutions[0]).toLowerCase()
-if ( myQutions[1] == myAnswer[0] ||  myQutions[1] == myAnswer[1]) {
+if (myQutions[1] == myAnswer[0] || myQutions[1] == myAnswer[1]) {
     alert("sure I do!");
     var correct = correct + 1;
 }
-else{
+else {
     alert("wrong");
 
 }
@@ -27,7 +27,7 @@ if (myQutions[1] == myAnswer[0] || myQutions[1] == myAnswer[1]) {
     alert("proudely yes!");
     var correct = correct + 1;
 }
-else{
+else {
     alert("wrong");
 }
 
@@ -37,16 +37,16 @@ if (myQutions[2] == myAnswer[2] || myQutions[2] == myAnswer[3]) {
     alert("sadely");
     var correct = correct + 1;
 }
-else{
+else {
     alert("wrong");
 }
 
-var plants =prompt(myQutions[3]).toLowerCase();
+var plants = prompt(myQutions[3]).toLowerCase();
 if (plants == myAnswer[2] || plants == myAnswer[3]) {
     alert("correct");
     var correct = correct + 1;
 }
-else{
+else {
     alert("wrong");
 }
 
@@ -95,10 +95,10 @@ document.write('<h3>' + "for Q6 you tried " + i + "times " + "the correct answer
 
 //Q7
 
-var qBrotherName = prompt("what are my brother's names? 6 atp");
-var aBrotherName = ["ahmed", "khaled", "anas"];
-
 for (var a = 0; a < 6; a++) {
+    var qBrotherName = prompt("what are my brother's names? 6 atp");
+    var aBrotherName = ["ahmed", "khaled", "anas"];
+
     for (var y = 0; y < qBrotherName.length; y++) {
         if (qBrotherName === aBrotherName[y]) {
             alert("correct!");
@@ -107,7 +107,7 @@ for (var a = 0; a < 6; a++) {
             break;
         }
     }
-    if (answer == true){
+    if (answer === true) {
         break;
     }
 
@@ -121,7 +121,7 @@ document.write('<h4>' + "your total is " + correct + '</h4>')
 
 alert("Bye" + name);
 
-function enterNameHere (userInput){
-    alert ('your have entered : '+ userInput);
+function enterNameHere(userInput) {
+    alert('your have entered : ' + userInput);
 }
-enterNameHere ('waleed A. afifi')
+enterNameHere('waleed A. afifi')
