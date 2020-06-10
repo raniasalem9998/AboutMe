@@ -104,12 +104,13 @@ for (var a = 0; a < 6; a++) {
             alert("correct!");
             var correct = correct + 1;
             var answer = true;
+            break;
         }
-       
     }
-    if (answer = true) {
+    if (answer == true){
         break;
     }
+
     alert("wrong");
 }
 
@@ -120,9 +121,7 @@ document.write('<h4>' + "your total is " + correct + '</h4>')
 
 alert("Bye" + name);
 
-
-function enterYourNameHere( userInput ) {
-    alert('You have enter :' + userInput);
+function enterNameHere (userInput){
+    alert ('your have entered : '+ userInput);
 }
-
-enterYourNameHere('Waleed A. Afifi');
+enterNameHere ('waleed A. afifi')
