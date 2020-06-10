@@ -131,12 +131,7 @@ for (var a = 0; a < 6; a++) {
     var qBrotherName = prompt("what are my brother's names? 6 atp");
     var aBrotherName = ["ahmed", "khaled", "anas"];
 
-    if (!(qBrotherName === aBrotherName[y])) {
-        alert("wrong");
-        qBrotherName = prompt("what are my brother's names? 6 atp");
-    }
-    
-    for (var y = 0; y < qBrotherName.length ; y++) {
+    for (var y = 0; y < qBrotherName.length; y++) {
         if (qBrotherName === aBrotherName[y]) {
             alert("correct!");
             var correct = correct + 1;
@@ -144,9 +139,17 @@ for (var a = 0; a < 6; a++) {
             break;
         }
     }
+    if (!(qBrotherName === aBrotherName[y])) {
+        alert("wrong");
+    }
+    
+
     if (answer === true) {
         break;
     }
+
+
+
 
 }
 
