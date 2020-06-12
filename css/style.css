@@ -2,35 +2,36 @@ body{
    background-color: rgba(12, 57, 58, 0.212);
 }
 h1{
-    text-align: center;
+ text-align: center;
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: 100px;
 font-style:italic ;
 color:rgb(57, 59, 19);
-margin: initial;
+
 
 }
-img {
+ li img {
+     padding-left:25px ;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 20px;
-    width: 500px;
-    padding-right: 20px;
+    width: 90%;
+  
 }
 
 div {
-    width: 2000px;
+  
+   
     padding: 10px;
     background: rgb(58, 34, 195);
     background: radial-gradient(circle,rgba(12, 57, 58, 0.267) 0%, rgba(37, 238, 221, 0.384) 100%);
-    font-size: 80;
+    
     width:50%;
     color: rgb(7, 2, 2); 
     font-family: serif;
     margin-left: 25%;
     margin-bottom: 30px;
     margin-top: 30px;
-    margin-right: 25;
+    
     
 }
 #top{
@@ -43,11 +44,11 @@ ol li {
     padding-bottom: 20px;
 }
 
-h3{
+ h3{
     text-align: center;
     font-family: monospace;
 }
-h4 {
+ h4 {
     text-align: center;
     font-style: italic;
     color: rgb(26, 73, 49);
