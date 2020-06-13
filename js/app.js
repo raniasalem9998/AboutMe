@@ -84,7 +84,7 @@ function question(userInput,correct,numGuess,qBrotherName) {
 
     var randumN = Math.round(Math.random() * 5)
 
-console.log(randumN)
+// console.log(randumN)
 
 for (var i = 0; i <= 3; i++) {
 
@@ -141,7 +141,7 @@ document.write('<h4>' + "your total is " + correct + '</h4>')
 
 
 
-    console.log(correct);
+    // console.log(correct);
     return [myQutions , correct , numGuess , aBrotherName];
 }
 
